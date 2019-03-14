@@ -6,7 +6,7 @@
     "name": "ERPOnline Backend Theme",
     "summary": "Mobile backend theme for Odoo community",
     "version": "12.0.1.0.23",
-    "category": "Themes/Backend",
+    "category": "Theme/Backend",
     "website": "https://www.erponline.vn",
 	"description": """
 		Backend theme for Odoo community edition, based on the Material/United Backend Theme by Openworx
