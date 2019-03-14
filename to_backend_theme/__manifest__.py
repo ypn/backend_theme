@@ -7,14 +7,16 @@
     "summary": "Mobile backend theme for Odoo community",
     "version": "12.0.1.0.23",
     "category": "Theme/Backend",
-    "website": "https://www.erponline.vn",
+    'author' : 'Openworx, T.V.T Marine Automation (aka TVTMA)',
+    'website': 'https://www.erponline.vn',
+    'live_test_url': 'https://v12demo-int.erponline.vn',
+    'support': 'support@ma.tvtmarine.com',
 	"description": """
 		Backend theme for Odoo community edition, based on the Material/United Backend Theme by Openworx
     """,
 	'images':[
         'images/erponline_theme_screen.png'
 	],
-    "author": "Openworx, TVTMA",
     "license": "LGPL-3",
     "installable": True,
     "auto_install": True,
