@@ -211,14 +211,21 @@ body {
 .o_calendar_container {
 	.o_calendar_sidebar_container {
 		.ui-datepicker {
-			table {
-				.ui-state-active {
-					background: none;
-					background-color: $brand-primary !important;
-					color: #ffffff !important;
+			td {
+				&.ui-datepicker-current-day {
+					&.ui-datepicker-today {
+						a {
+							background: $brand-primary;
+						}
+					}
 				}
+			}
+			table {
 				.ui-state-default {
 					color: $brand-secondary;
+				}
+				.ui-state-active {
+					color: #ffffff !important;
 				}
 			}
 		}
@@ -645,7 +652,14 @@ select {
 
 .o_thread_window {
 	.o_thread_window_header {
-		background-color: $brand-primary;
+		background-color: $brand-primary-dark;
+		.o_thread_window_title {
+			.o_mail_user_status {
+				&.o_user_online {
+					color: $brand-primary;
+				}
+			}
+		}
 	}
 	.o_mail_thread {
 		.o_thread_date_separator {
@@ -721,6 +735,16 @@ select {
 .o_mail_systray_item {
 	.o_notification_counter {
 		background: $brand-secondary;
+	}
+	.o_mail_systray_dropdown {
+		.o_mail_systray_dropdown_top {
+			.o_filter_button {
+				&.active,
+				&:hover {
+					color: $brand-secondary;
+				}
+			}
+		}
 	}
 }
 
@@ -815,3 +839,18 @@ select {
 	}
 }
 
+@media (max-width: 575.98px){
+	.modal {
+		&.o_technical_modal{
+			&.o_modal_full {
+				.modal-dialog {
+					.modal-content {
+						.modal-header {
+							background: $brand-primary-darker;
+						}
+					}
+				}
+			}
+		}
+	}
+}
