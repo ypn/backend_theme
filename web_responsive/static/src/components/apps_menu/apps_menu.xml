@@ -15,15 +15,14 @@
                     class="o_app"
                     t-att-class="{ o_dropdown_active: menuService.getCurrentApp() === app }"
                     payload="app"
+                    href="getMenuItemHref(app)"
                 >
-                    <a t-att-href="getMenuItemHref(app)">
-                        <img
-                            class="o-app-icon"
-                            draggable="false"
-                            t-attf-src="data:image/png;base64,{{app.webIconData}}"
-                        />
-                        <div t-esc="app.name" />
-                    </a>
+                    <img
+                        class="o-app-icon"
+                        draggable="false"
+                        t-attf-src="data:image/png;base64,{{app.webIconData}}"
+                    />
+                    <div t-esc="app.name" />
                 </MenuItem>
             </AppsMenu>
         </xpath>
